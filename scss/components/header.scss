@@ -1,0 +1,173 @@
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  display: inline-grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: $darkBlue;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  .box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .user {
+      width: 94%;
+      height: 20rem;
+      border: 1px solid $mainBlue;
+      padding: 22px;
+      border-radius: 17px;
+      z-index: 100;
+      background-color: $mainBlue;
+      color: $white;
+
+      .user-img {
+        width: 5rem;
+        height: 5rem;
+        border: 3px solid $white;
+        border-radius: 50%;
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+
+      .user-info {
+        margin-top: 2rem;
+
+        h5 {
+          font-size: 13px !important;
+          font-weight: 300;
+          opacity: 0.6;
+        }
+        h4 {
+          font-size: 40px;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .reports {
+      width: 94%;
+      height: 10rem;
+      position: relative;
+      top: -8px;
+      border: 1px solid $DarkBlue;
+      padding: 22px;
+      border-bottom-left-radius: 17px;
+      border-bottom-right-radius: 17px;
+      background-color: $DarkBlue;
+
+      .months {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        a {
+          margin: 0.2rem 0;
+          color: $DesaturatedBlue;
+        }
+        .active {
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+}
+
+//--------------- Right part start-----------------//
+
+.box {
+  position: relative;
+
+  .first-box {
+    width: 94%;
+    height: 4rem;
+    position: relative;
+    overflow-y: hidden;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+
+    .icon {
+      position: absolute;
+      right: 15px;
+      top: -7px;
+      width: 4rem;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .second-box {
+    position: relative;
+    top: -1.2rem;
+    width: 94%;
+    // height: 8rem;
+    border: 1px solid $DarkBlue;
+    padding: 22px;
+    border-radius: 17px;
+    z-index: 100;
+    background-color: $DarkBlue;
+    color: $white;
+
+    .box-header {
+      display: flex;
+      justify-content: space-between;
+
+      h5 {
+        font-size: 18px;
+      }
+      .dot-icon {
+        width: 1.5rem;
+        height: auto;
+      }
+    }
+
+    .box-body {
+      margin-top: 0.6rem;
+
+      h5 {
+        font-size: 3.2rem;
+        margin-left: 0.2rem;
+        font-weight: 300;
+      }
+      h4 {
+        font-size: 0.96rem;
+        font-weight: 400;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .bg-light-orange {
+    background-color: $Lighted;
+  }
+  .bg-light-blue {
+    background-color: $SoftBlue;
+  }
+  .bg-light-red {
+    background-color: $LightRed;
+  }
+  .bg-soft-orange {
+    background-color: $SoftOrange;
+  }
+  .bg-VioletSocial {
+    background-color: $VioletSocial;
+  }
+  .bg-LimeGreen {
+    background-color: $LimeGreen;
+  }
+}
+//--------------- End of Right part -----------------//

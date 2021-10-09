@@ -1,0 +1,91 @@
+@media (max-width: 575px) {
+  .row {
+    display: flex;
+    row-gap: 1rem !important;
+  }
+  .user {
+    width: 100% !important;
+    height: 11rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .user-img {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    .user-info {
+      margin: 0 0 1rem 1rem;
+
+      h5 {
+        font-size: 17px !important;
+        font-weight: 300;
+      }
+      h4 {
+        font-size: 24px !important;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .reports {
+    width: 100% !important;
+    height: 6rem !important;
+
+    .months {
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      flex-direction: row !important;
+      justify-content: space-evenly;
+    }
+  }
+
+  .first-box {
+    width: 100% !important;
+    height: 4rem;
+  }
+
+  .second-box {
+    position: relative;
+    top: -1.2rem;
+    width: 100% !important;
+    // height: 8rem;
+    border: 1px solid $DarkBlue;
+    padding: 22px;
+    border-radius: 17px;
+    z-index: 100;
+    background-color: $DarkBlue;
+    color: $white;
+
+    .box-header {
+      display: flex;
+      justify-content: space-between;
+
+      h5 {
+        font-size: 18px;
+      }
+      .dot-icon {
+        width: 1.5rem;
+        height: auto;
+      }
+    }
+
+    .box-body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h5 {
+        font-size: 2.5rem !important;
+        margin-left: 0 !important;
+      }
+      h4 {
+        font-size: 0.78rem !important;
+        font-weight: 400;
+        opacity: 0.6;
+      }
+    }
+  }
+}

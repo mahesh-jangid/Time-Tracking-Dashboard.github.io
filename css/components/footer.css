@@ -1,0 +1,6 @@
+@media (max-width: 375px) {
+  .user {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100% !important; } }
